@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>praktikum 5</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #e6e6e6;
+      padding: 20px;
+    }
+
+   
+    .browser {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid #555;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .browser-top {
+      background: #e4e4e4;
+      border-bottom: 1px solid #555;
+      text-align: center;
+      padding: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .address-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #f2f2f2;
+      border-bottom: 1px solid #555;
+      padding: 6px 10px;
+    }
+
+    .nav-icons {
+      font-size: 16px;
+      color: #333;
+      letter-spacing: 6px;
+    }
+
+    .url {
+      flex: 1;
+      background: #fff;
+      border: 1px solid #aaa;
+      border-radius: 3px;
+      padding: 4px 10px;
+      font-size: 13px;
+      color: #1a73e8;
+    }
+
+    
+    .content {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* Header hijau */
+    .header {
+      height: 60px;
+      background: #aadd90;
+      border: 1px solid #333;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 3.4fr;
+      gap: 15px;
+      height: 120px;
+    }
+
+    .box {
+      border: 1px solid #333;
+    }
+
+    .sidebar-yellow {
+      background: #f5e94e;
+    }
+
+    .main-orange {
+      background: #ff6a26;
+    }
+
+    .main-cyan {
+      background: #4fd8fa;
+    }
+
+    @media (max-width: 600px) {
+      .row {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .box {
+        min-height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="browser">
+    <div class="browser-top">praktikum 5</div>
+
+    <div class="address-bar">
+      <span class="nav-icons">← → ⟳</span>
+      <div class="url">http://box1b.com</div>
+    </div>
+
+    <div class="content">
+      <!-- Header -->
+      <div class="header box"></div>
+
+     
+      <div class="row">
+        <div class="box sidebar-yellow"></div>
+        <div class="box main-orange"></div>
+      </div>
+
+      
+      <div class="row">
+        <div class="box sidebar-yellow"></div>
+        <div class="box main-cyan"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+   

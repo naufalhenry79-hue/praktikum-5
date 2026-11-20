@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Navbar */
+header {
+  background: #7ff5d0;
+  padding: 8px 30px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+header li a:hover {
+  color: #474747;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+/* Konten */
+div {
+  padding: 20px;
+}
+
+div h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+div > ul {
+  padding-left: 40px;
+  font-size: 22px;
+  line-height: 1.6;
+}
